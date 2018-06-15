@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block css %} 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profile.css') }}"/>
+{% endblock%}
+{% block main %}
+    <h1>Profile<br /></h1>
+
+    <img src="https://i.redd.it/ea5g8870jgi01.jpg" alt="{{ profile.image }}" id="ProfilePic">
+    <div class="biobox">
+        <div id="Name"><b>{{ profile.first_name ~ " " ~ profile.last_name }}</b></div>
+        <div id="Date" class="bottomborder">Profile Created On: {{ profile.datecreated|datetimeformat }}</div>
+        <div id="UserName"><b>Username:</b> {{ profile.username }}</div>
+        <div id="IDNum"><b>User ID: </b> {{ profile.id }}</div>
+        <div id="Age"><b>Age: </b>{{ profile.age }}</div>
+        <div id="Gender" class="bottomborder"><b>Gender: </b>{{ profile.gender }}</div>
+        <div id="AboutMe"><b>User Tags: </b>{{ profile.tags }}</div>
+        <div id="AboutMe"><b>User WalletId: </b>{{ profile.walletid }}</div>
+        <div id="AboutMe"><b>User Account Balance: </b>{{ profile.balance }}</div>
+    </div>
+{% endblock %}

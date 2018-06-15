@@ -1,0 +1,120 @@
+/* ============== Colors ================== */
+
+.bodyLightGreyBG {
+    background-color: #f5f5f5 !important;
+    color: #292e34;
+}
+
+.bodyTextColor {
+    color: #292e34;
+}
+
+.panelWhiteBG {
+    background-color: #f5f5f5 !important;
+}
+
+.mainNavGreyBg {
+    background-color: #1d1d1d !important;
+}
+
+.sideNavGreyBG1 {
+    background-color: #292e34 !important;
+}
+
+.sideNavGreyBG2 {
+    background-color: #393f44 !important;
+}
+
+.sideNavGreyBG3 {
+    background-color: #4d5258 !important;
+}
+
+.blueAccentColor {
+    background-color: #30aae8 !important;
+}
+
+
+/* ============== Colors ================== */
+
+.noLRPadding {
+    padding-left: 0 !important;
+    /* padding-right: 0 !important; */
+
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .noLRPadding {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+}
+
+.navBlueAccent {
+    border-top: 5px solid #30aae8;
+}
+
+.nav-link:hover {
+    background-color: #393f44 !important;
+}
+
+.sideNav1 .nav-link.active {
+    background: rgba(101, 109, 115, 0.25);
+    border-left: 3px solid #30aae8;
+}
+
+.sideNav1 .nav-link:hover {
+    background: rgba(101, 109, 115, 0.25);
+}
+
+.mainNavBar {
+    background-color: #1d1d1d !important;
+    border-top: 1px solid #30aae8;
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1071;
+    min-height: 4rem;
+}
+
+.mainNavBar>a,
+a.nav-link {
+    color: white;
+}
+
+.sideNav1 {
+    height: 100vh;
+    background-color: #292e34 !important;
+    color: white !important;
+}
+
+.nav-link {
+    transition: 0.5s;
+}
+
+@media (min-width: 1200px) {
+    .sideNavSize {
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sideNavSize {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 4rem;
+        z-index: 1000;
+        max-height: calc(100vh - 4rem);
+    }
+}
+
+.sideNavSize {
+    -ms-flex-order: 0;
+    order: 0;
+}
+
+.nav-link {
+    transition: 0.5s;
+}

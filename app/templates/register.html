@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block pageTitle %}QUICC FOOD - Register{% endblock %}
+
+{% block mainTitle %}Register{% endblock %}
+{% block main %}
+<h2>Create A User Profile</h2><br>
+
+{% from "_bootstrapformhelpers.html" import render_bootstrap_field %}
+<form class="form-horizontal" action="{{ url_for('register') }}" method="POST" enctype="multipart/form-data">
+    {{ form.csrf_token }}
+    {{ render_bootstrap_field(form,form.fName) }}
+    {{ render_bootstrap_field(form,form.lName) }}
+    {{ render_bootstrap_field(form,form.userName) }}
+    {{ render_bootstrap_field(form,form.password) }}
+    {{ render_bootstrap_field(form,form.confirm) }}
+    {{ render_bootstrap_field(form,form.gender) }}
+    {{ render_bootstrap_field(form,form.age) }}
+
+    <h3>Choose your favourite foods </h3>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox1" value="rice">
+            <label class="form-check-label" for="inlineCheckbox1">Rice</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox2" value="chicken">
+            <label class="form-check-label" for="inlineCheckbox2">Chicken</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox3" value="vegetarian">
+            <label class="form-check-label" for="inlineCheckbox3">Vegetarian</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox4" value="salad">
+                <label class="form-check-label" for="inlineCheckbox4">Salad</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox5" value="spicy">
+                <label class="form-check-label" for="inlineCheckbox5">Spicy</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox6" value="curry">
+                <label class="form-check-label" for="inlineCheckbox6">Curry</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox7" value="jerk">
+                <label class="form-check-label" for="inlineCheckbox7">Jerk</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox8" value="stew">
+                <label class="form-check-label" for="inlineCheckbox8">Stew</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox9" value="soup">
+                <label class="form-check-label" for="inlineCheckbox9">Soup</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox10" value="noodles">
+                <label class="form-check-label" for="inlineCheckbox10">Noodles</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox11" value="pork">
+                <label class="form-check-label" for="inlineCheckbox11">Pork</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox12" value="beef">
+                <label class="form-check-label" for="inlineCheckbox12">Beef</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox13" value="fish">
+                <label class="form-check-label" for="inlineCheckbox13">Fish</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox14" value="patty">
+                <label class="form-check-label" for="inlineCheckbox14">Patty</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox15" value="burger">
+                <label class="form-check-label" for="inlineCheckbox15">Burger</label>
+        </div>
+        <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="tags" id="inlineCheckbox16" value="wrap">
+                <label class="form-check-label" for="inlineCheckbox16">Wrap</label>
+        </div>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit" class="btn btn-primary btn-md">Sign up <span class="glyphicon glyphicon-send"></span></button>
+        </div>
+    </div>
+</form>
+{% endblock %}

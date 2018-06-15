@@ -1,0 +1,173 @@
+/* ============== Colors ================== */
+
+.bodyLightGreyBG {
+    background-color: #f5f5f5 !important;
+    color: #292e34;
+}
+
+.bodyTextColor {
+    color: #292e34;
+}
+
+.panelWhiteBG {
+    background-color: #f5f5f5 !important;
+}
+
+.mainNavGreyBg {
+    background-color: #1d1d1d !important;
+}
+
+.sideNavGreyBG1 {
+    background-color: #292e34 !important;
+}
+
+.sideNavGreyBG2 {
+    background-color: #393f44 !important;
+}
+
+.sideNavGreyBG3 {
+    background-color: #4d5258 !important;
+}
+
+.blueAccentColor {
+    background-color: #30aae8 !important;
+}
+
+/* ============== Colors ================== */
+
+
+/* ============== Utilities ================== */
+
+.noLRPadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ============== Utilities ================== */
+
+
+/* ============== Main Nav Bar ================== */
+
+.mainNavBar {
+    background-color: #1d1d1d !important;
+    border-top: 1px solid #30aae8;
+    height: 50px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 14px;
+}
+
+.mainNavItems .nav-item .nav-link:hover {
+    background-color: #393f44 !important;
+    transition: all 0.3s;
+}
+
+.navbar-brand {
+    /* color: #8B7CC9 !important; */
+    color: #30aae8 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* ============== Main Nav Bar ================== */
+
+
+/* ============== Side Nav Bar ================== */
+
+.sideNavBar {
+    background-color: #292e34 !important;
+    top: 50px;
+    z-index: 1000;
+}
+
+@media (max-width: 767px) {
+    .sideNavBar {
+        position: fixed;        
+    }
+
+    .navbar-brand {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    #sideNavBar {
+        display: initial;
+    }
+
+    .sideNavBar {
+        height: 92vh;
+        position: sticky;
+    }
+}
+
+.sideNavBarLinks .nav-item .nav-link.active {
+    border-left: 4px solid #30aae8;
+    padding-left: 11px;
+    background-color: #373C41 !important;
+    color: #0088ce;
+}
+
+.sideNavBarLinks .nav-item .nav-link {
+    color: #fff;
+    transition: all 0.5s;
+    padding-left: 15px;
+}
+
+.sideNavBarLinks .nav-item .nav-link:hover {
+    background-color: #393f44 !important;
+}
+
+/* ============== Side Nav Bar ================== */
+
+
+.mainContent {
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+
+/* ============== Card Styling ================== */
+
+.card {
+    margin-bottom: 25px;
+}
+
+div.card-header:nth-child(n+1) {
+    border-top: 2px solid #30aae8;
+}
+
+div.card-header:nth-child(3n+3) {
+    border-top: 2px solid red;
+}
+
+/* .card-header {
+    border-top: 2px solid #30aae8;
+}
+
+.card-header {
+    border-top: 2px solid #30aae8;
+} */
+
+/* ============== Card Styling ================== */
+
+.pageTitle {
+    background-color: #fff;
+    margin-top: -25px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pageTitle>h1 {
+    display: inline-block;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.notifications {
+    
+}

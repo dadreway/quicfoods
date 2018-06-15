@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% block pageTitle %}QUICC FOODS{% endblock%}</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link rel="stylesheet" href="css/bootstrap-4.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/mainstyle.css"> 
+    {% block css %} {% endblock%}
+</head>
+
+<body class="">
+    <header>
+        {% include "header.html" %}
+    </header>
+
+    <main>
+        <div class="container">
+            {% include 'flash_messages.html' %} 
+            {% block main %}{% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            {% include "footer.html" %}
+        </div>
+    </footer>
+
+
+
+    <script src="/static/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script> 
+    {% block js %}{% endblock%}
+</body>
+</html>

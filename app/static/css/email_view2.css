@@ -1,0 +1,122 @@
+html,body
+{
+    height:100%;
+    width: 100%;
+    margin: 0px;
+}
+#headerBar{
+    background-color: #442258;
+    height: 45px;
+    font-family: "SegoeUI-SemiLight-final","Segoe UI SemiLight","Segoe UI WPC Semilight","Segoe UI",Segoe,Tahoma,Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: none;
+    text-align: left;
+    width: 100%;
+}
+
+#emailHeaderName {
+    line-height: 45px;
+    float: left;
+    font-size: 24px;
+    padding-left: 7px;
+    
+}
+#hallName > p{font-size: 16px;line-height: 0px;}
+#headerBar > a {text-decoration: none;}
+#userlogin {
+    float: right;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 12px;
+    padding-right: 10px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#userlogin > #loginIcon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    bottom: 5px;
+    padding-right: 10px;
+    float: left;
+}
+#leftBar > button:first-child{
+  margin-top: 8px;
+}
+#leftBar {
+    float: left;
+    min-width: 200px;
+    max-width: 200px;
+    height: 100%;
+    background-color: #f4f4f4;
+}
+#leftBar > button {
+    width: 100%;
+    margin-left: 0px;
+}
+#controls {
+    background-color: #e2e2e2;
+    height: 40px;
+}
+
+button {
+    /*background-color: #69C5E4;*/
+    background-color: rgba(45, 34, 88, 0.77);
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    margin-top: 8px;
+    margin-left: 40px; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #69C5E4;
+    /*background-color: rgba(45, 34, 88, 0.77);*/
+}
+
+#emailSection {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+#emailSection > a > div > span {
+    display: inline-block;
+    width: 320px;
+    padding-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#emailSection > a > div > span:first-child {
+    width: 200px;
+    padding-left: 15px;
+    padding-top: 5px;
+    
+}
+#emailSection > a > div > span:nth-child(2) {
+    width: 640px;
+    padding-left: 15px;
+
+}
+#emailSection > a > div > span:nth-child(3) {
+    float: right;
+    width: auto;
+    margin-right: 5px;
+    
+}
+
+
+.ellipsis {
+    
+}
+.emails {
+
+}

@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block pageTitle %}QUICC FOOD - My Wallet{% endblock %}
+
+{% block mainTitle %}My Wallet{% endblock %}
+{% block main %}
+
+    <div class="col-12">
+        
+        <div class="card cardSpacing">
+            <div class="card-body">
+                
+                <h4 class="card-title">Wallet Code: AAH352</h4>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="">Your Balance: $0.00</h5>
+                    
+                        <br />
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" value="50000" onclick="Amount($this.value)">
+                            Add $500 JMD <i class="fas fa-camera-retro"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary" value="100000" onclick="Amount($this.value)">
+                            Add $1000 JMD <i class="fas fa-camera-retro"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary" value="250000" onclick="Amount($this.value)">
+                            Add $2500 JMD <i class="fas fa-camera-retro"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary" value="500000" onclick="Amount($this.value)">
+                            Add $5000 JMD <i class="fas fa-camera-retro"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary" value="1000000" onclick="Amount($this.value)">
+                            Add $10000 JMD <i class="fas fa-camera-retro"></i>
+                        </button>
+                        
+                        <input id="amountInDollars" type="hidden" value="50000">
+                        
+                        <script>
+                            var handler = StripeCheckout.configure({
+                            key: 'pk_test_ZiFwe4nz9E1qadhXHCOiylgj',
+                            image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
+                            token: function(token) {
+                                $("#stripeToken").val(token.id);
+                                $("#stripeEmail").val(token.email);
+                                $("#amountInCents").val(Math.floor($("#amountInDollars").val() * 100));
+                                $("#myForm").submit();
+                            }
+                            });
+
+                            $('#customButton').on('click', function(e) {
+                            var amountInCents = Math.floor($("#amountInDollars").val() * 100);
+                            var displayAmount = parseFloat(Math.floor($("#amountInDollars").val() * 100) / 100).toFixed(2);
+                            // Open Checkout with further options
+                            handler.open({
+                                name: 'Demo Site',
+                                description: 'Custom amount ($' + displayAmount + ')',
+                                amount: amountInCents,
+                            });
+                            e.preventDefault();
+                            });
+
+                            // Close Checkout on page navigation
+                            $(window).on('popstate', function() {
+                            handler.close();
+
+                            function Amount(amount){
+                                document.getElementById("amountInDollars").value = amount 
+                            }
+
+                            });
+
+                        </script>
+
+                        <br />
+                        
+                                                
+                    </div>
+                            
+                    
+                </div>
+        </div>
+
+            
+
+    </div>
+{% endblock %}

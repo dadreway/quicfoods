@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block pageTitle %}QUICC FOOD - My Wallet{% endblock %}
+
+{% block mainTitle %}My Wallet{% endblock %}
+{% block main %}
+
+    <div class="col-12">
+        
+        <div class="card cardSpacing">
+            <div class="card-body">
+                
+                <h4 class="card-title">Wallet Code: {{ user.walletid }}</h4>
+                
+                <div class="row">
+                    <div class="col-6">
+                        <h5 class="">Your Balance: {{ user.balance | format_currency }}</h5>
+                    
+                        <br />
+                        
+                        <form action="/addFunds/{{ amount }}" method="POST">
+                            <article>
+                                <label>
+                                <span>Amount to add: {{ amountInDollars | format_currency}}</span>
+                                </label>
+                            </article>
+                        
+                            <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                    data-key="{{ key }}"
+                                    data-description="${{ amountInDollars | format_currency }} Ewallet Charge"
+                                    data-amount="{{ amount }}"
+                                    data-locale="auto"></script>
+                            </form>
+
+                        <br />
+                                                
+                    </div>
+                            
+                    
+                </div>
+        </div>
+
+            
+
+    </div>
+{% endblock %}

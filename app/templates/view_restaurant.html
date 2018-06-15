@@ -1,0 +1,54 @@
+{% extends "base.html" %} 
+{% block pageTitle %}QUICC FOOD - {{ restaurantTitle }}{% endblock %} 
+
+{% block mainTitle %}{{ restaurantTitle }}{% endblock %}
+{% block main %}
+
+{% if menuItems %}
+    {% for item in menuItems %}
+        <div class="col-12 col-sm-3">
+            <div class="card cardSpacing restaurantCard">
+                <img class="card-img-top img-fluid restaurantImage" src="{{ item[5] }}" alt="{{ item[1] }}">
+                <div class="card-body restaurantCardBody">
+                    <h4 class="card-title restaurantTitle">{{ item[1] }}</h4>
+                    <p class="card-text restaurantType">{{ item[4] }}</p>
+                    <p class="card-text restaurantAddress">{{ item[3] | format_currency }}</p>
+                    
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <label for="example-number-input" class="col-12 col-form-label">Quantity</label>
+                            <div class="col-12">
+                                <input class="form-control" type="number" value="1" min="1" max="9" id="example-number-input" oninput=Test(this)>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="/checkout/{{ item[0] }}/1" class="btn btn-primary restaurantButton">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+        <script>
+            function Test(element){
+                buttonToUpdate = element.parentNode.parentNode.parentNode.nextSibling.nextSibling.childNodes[1];
+                buttonToUpdate.href = buttonToUpdate.href.slice(0, -1);
+                buttonToUpdate.href +=  element.value;
+                console.log(buttonToUpdate.href);
+                // buttonToUpdate.href = buttonToUpdate.href + this.value
+            }
+        </script>
+{% else %}
+        <div class="col-12">
+            <div class="card cardSpacing text-center">
+                <div class="card-body">
+                    <h4 class="card-title">No Items Found</h4>
+                    <p class="card-text">
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+{% endif %}
+{% endblock %}

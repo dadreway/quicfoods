@@ -1,0 +1,314 @@
+{% extends "base_no_header.html" %} 
+{% block pageTitle %}QUICC FOOD - Home{% endblock %} 
+
+{% block main %}
+
+    <div class="container-fluid pageHeader">
+        <div class="pageHeaderContents text-center">
+            <h1 class="">Welcome to QUICC FOODS</h1>
+            <br />
+            <br />
+            <a href="/restaurants/" class="btn btn-primary restaurantButton">Browse All Restaurants</a>
+        </div>
+    </div>
+
+    <div class="container sectionCover">
+
+        <div class="row">
+
+            <div class="col-12">
+                <h2 class="section-title">How it works</h2>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card cardSpacing howItWorks">
+                    <div class="card-body">
+                        <h4 class="card-title">Browse our catalogue of restaurants</h4>
+                        <div class="text-center">
+                            <i class="fas fa-utensils" style="color: lightseagreen; text-shadow: 1px 1px 1px #ccc; font-size: 4.5em;"></i>
+                        </div>
+                        <p class="card-text">
+                            <br /> Select any meal from any of our partners
+                            <br />
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card cardSpacing howItWorks">
+                    <div class="card-body">
+                        <h4 class="card-title">Purchase your meal online</h4>
+                        <div class="text-center">
+                            <i class="fas fa-credit-card" style="color: lightseagreen; text-shadow: 1px 1px 1px #ccc; font-size: 4.5em;"></i>
+                        </div>
+                        <p class="card-text">
+                            <br /> Checkout and pay for your meal using your debit/credit card.
+                            <br />
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card cardSpacing howItWorks">
+                    <div class="card-body">
+                        <h4 class="card-title">Have it delivered anywhere you want</h4>
+                        <div class="text-center">
+                            <i class="fas fa-truck" style="color: lightseagreen; text-shadow: 1px 1px 1px #ccc; font-size: 4.5em;"></i>
+                        </div>
+                        <p class="card-text">
+                            <br /> Get your food delievered to your door.
+                            <br />
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid sectionCover appSection">
+        <div class="container">
+            <div class="row sectionCoverContents">
+                <div class="col-12">
+                    <h2 class="section-title">Our app (Coming Soon!)</h2>
+                </div>
+
+                <div class="col-12">
+                    <div class="row">
+                        <div class="d-none d-sm-block col-sm-8">
+                            <img class="img-fluid app-image" src="/static/img/BG4.png" alt="Our app coming soon">
+                        </div>
+
+                        <div class="col-12 col-sm-4">
+                            <img class="img-fluid" src="/static/img/comingsoon_android.png" alt="Our app coming soon">
+                            <img class="img-fluid" src="/static/img/comingsoon_ios.png" alt="Our app coming soon">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container sectionCover">
+        <div class="row">
+
+            <div class="col-12">
+                <h2 class="section-title">Our Picks For You</h2>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/golden_gate_restaurant_logo.png" alt="Golden Gate Restaurant">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">Golden Gate Restaurant</h4>
+                        <p class="card-text restaurantType">Chinese</p>
+                        <p class="card-text restaurantAddress">Northside Plaza, 14 Northside Drive, Liguanea, Kingston 6</p>
+                        <p class="card-text restaurantDescription">Authentic Cantonese Restaurant</p>
+                        <div class="text-center">
+                            <a href="/restaurants/golden-gate-restaurant" class="btn btn-primary restaurantButton">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/fat_boy_sandwich_house_logo.png" alt="Fat Boy Sandwich House">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">Fat Boy Sandwich House</h4>
+                        <p class="card-text restaurantType">Italian | Fast Food</p>
+                        <p class="card-text restaurantAddress">106 Hope Road, Sovereign Centre, Kingston</p>
+                        <p class="card-text restaurantDescription">A place which serves Big, Fresh and Healthy Sandwiches for great value!</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary disabled restaurantButton">Coming Soon!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/secret_gardens_restaurant_logo.png" alt="Secret Gardens Restaurant">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">Secret Gardens Restaurant</h4>
+                        <p class="card-text restaurantType">Jamaican | Chinese | Mexican | American</p>
+                        <p class="card-text restaurantAddress">4 West Kingshouse Close, Mayfair Hotel, Kingston 10</p>
+                        <p class="card-text restaurantDescription">Intriguing journey with us! Into a Secret Hideaway Restaurant. Come and venture with us. Savour
+                            the flavour and Indulge! On the outskirts of New Kingston. Cheese ~ Wine ~ Bistro ~ Speciality
+                            Food
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary disabled restaurantButton">Coming Soon!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/tea_tree_creperie_logo.png" alt="Tea Tree Creperie">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">Tea Tree Creperie</h4>
+                        <p class="card-text restaurantType">Jamaican</p>
+                        <p class="card-text restaurantAddress">80 Lady Musgrave Road, Unit #2, Kingston 10</p>
+                        <p class="card-text restaurantDescription">Tea Tree Creperie is a Cordon Bleu style eatery & the first of its kind in Jamaica.</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary disabled restaurantButton">Coming Soon!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <h2 class="section-title">Trending Restaurants</h2>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/876_terrace_bar_and_grill_logo.png" alt="876 Terrace Bar & Grill">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">876 Terrace Bar & Grill</h4>
+                        <p class="card-text restaurantType">Jamaican</p>
+                        <p class="card-text restaurantAddress">2 South Avenue, Kingston 10</p>
+                        <p class="card-text restaurantDescription">Restaurant | Bar | Grill</p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary disabled restaurantButton">Coming Soon!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/c_and_c_south_beach_logo.png" alt="C&C South Beach">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">C&C South Beach</h4>
+                        <p class="card-text restaurantType">Jamaican | American</p>
+                        <p class="card-text restaurantAddress">2 Brompton Road, Kingston 5</p>
+                        <p class="card-text restaurantDescription">New Kingston's multi-function venue with indoor and outdoor options, including private cabanas
+                            and private night club rental. Let us host your next event! Event venue rental, Fine Dining
+                            Restaurant and Sports Bar
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary disabled restaurantButton">Coming Soon!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/eatopia_vegan_cuisine_logo.png" alt="Eatopia Vegan Cuisine">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">Eatopia Vegan Cuisine</h4>
+                        <p class="card-text restaurantType">Vegetarian</p>
+                        <p class="card-text restaurantAddress">Unit 1 - 30 Waterloo Avenue, Kingston 10</p>
+                        <p class="card-text restaurantDescription">At Eatopia, we’re serious about food. We’re committed to that perfect world in which you can
+                            be vegan and still have convenient meal options. Options that are not just good for you,
+                            they’re super tasty, they look good, and they’re satisfying. </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary disabled restaurantButton">Coming Soon!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-3">
+                <div class="card cardSpacing restaurantCard">
+                    <img class="card-img-top img-fluid restaurantImage" src="/static/img/restaurants/main_squeeze_logo.png" alt="Main Squeeze">
+                    <div class="card-body restaurantCardBody">
+                        <h4 class="card-title restaurantTitle">Main Squeeze</h4>
+                        <p class="card-text restaurantType">Jamaican</p>
+                        <p class="card-text restaurantAddress">53 Knutsford Boulevard, Kingston 10</p>
+                        <p class="card-text restaurantDescription">Smoothie & Juice Bar located in the heart of New Kingston. They provide only the best Natural
+                            Fruit Blends.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary disabled restaurantButton">Coming Soon!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid sectionCover appSection">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+                    <h2 class="section-title" style="color:white;">The Team</h2>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card cardSpacing">
+                        <div class="card-body">
+                            <h4 class="card-title">Front-End Design</h4>
+                            <p class="card-text">
+                                <br /> Done by the Bob Ross of Bootstrap.
+                                <br />
+                                <br /> Odane Barnes
+                                <br /> 620087815
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card cardSpacing">
+                        <div class="card-body">
+                            <h4 class="card-title">Back-End Design</h4>
+                            <p class="card-text">
+                                <br /> Done by the Meme Edgelord himself.
+                                <br />
+                                <br /> Andrew Hylton
+                                <br /> 620088048
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card cardSpacing">
+                        <div class="card-body">
+                            <h4 class="card-title">Flask Technician</h4>
+                            <p class="card-text">
+                                <br /> Done by the man with the next level knees.
+                                <br />
+                                <br /> Mario Mitchell
+                                <br /> 620079381
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="card cardSpacing">
+                        <div class="card-body">
+                            <h4 class="card-title">Stripe Payments</h4>
+                            <p class="card-text">
+                                <br /> Done by the man of many imperceptible gainz.
+                                <br />
+                                <br /> Julian Ingledew
+                                <br /> 620052447
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

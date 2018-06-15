@@ -1,0 +1,10 @@
+{% extends "base.html" %} 
+{% block pageTitle %}QUICC FOOD - 404 Page Not Found{% endblock %} 
+
+{% block mainTitle %}404 - Page Not Found{% endblock %}
+{% block main %}
+<div class="col-12 text-center">
+  <p>That page doesn't even exist.</p>
+  <p>Why don't you just <a href="{{ url_for('home') }}">go back home</a>?</p>
+</div>
+{% endblock %}

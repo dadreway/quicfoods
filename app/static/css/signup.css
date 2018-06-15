@@ -1,0 +1,104 @@
+.formPageBodyBackground {
+    background: url("../img/BG3.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    padding-top: 50px;
+
+    min-height: 650px;
+    /* background: rgba(203,96,179,1);
+    background: -moz-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 53%, rgba(193,70,161,1) 98%, rgba(219,54,164,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(203,96,179,1)), color-stop(53%, rgba(168,0,119,1)), color-stop(98%, rgba(193,70,161,1)), color-stop(100%, rgba(219,54,164,1)));
+    background: -webkit-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 53%, rgba(193,70,161,1) 98%, rgba(219,54,164,1) 100%);
+    background: -o-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 53%, rgba(193,70,161,1) 98%, rgba(219,54,164,1) 100%);
+    background: -ms-linear-gradient(left, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 53%, rgba(193,70,161,1) 98%, rgba(219,54,164,1) 100%);
+    background: linear-gradient(to right, rgba(203,96,179,1) 0%, rgba(168,0,119,1) 53%, rgba(193,70,161,1) 98%, rgba(219,54,164,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 ); */
+
+}
+
+.card {
+    background-color: whitesmoke;
+    padding: 20px 20px 30px 20px;
+    /* max-width: 400px; */
+    /* margin: 0 auto; */
+    margin-bottom: 50px;
+    opacity: 0.85;
+    /* max-width: 400px; */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width:430px) {
+    .card {
+        position: relative;
+        /* 'fixed' will work also. */
+        max-width: 400px;
+        /* Your required width here. */
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+hr {
+    border-top: 2px solid #eee;
+}
+
+.custombtn {
+    color: white;
+    font-size: 20px;
+    font-size: 1.25em;
+    /* background-color: lightgreen; */
+    background-color: #00CCCC;
+    font-weight: 300;
+    height: 40px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.afterbuttontext {
+    margin-top: 50px;
+}
+
+.custombtn>span.glyphicon {
+    color: white;
+    font-size: 17px;
+    padding-top: 2px;
+}
+
+.formFields {
+    margin-top: 30px;
+}
+
+.formFields>div {
+    margin-bottom: 30px;
+}
+
+.formButtons>div {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+@media (max-width:450px) {
+    div.formFields>.col-xs-4 {
+        width: 100%;
+    }
+}
+
+/* @media (max-width:360px) {
+    
+    .custombtn,
+    .custombtn>span.glyphicon {
+        font-size: 10px;
+        padding-top: 2px;
+    }
+} */
+

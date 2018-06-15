@@ -1,0 +1,7 @@
+ID,Food Name,Restaurant Served At,Cost,Tags,Image Src
+1,Fried Wonton,golden-gate-restaurant,400,chinese chicken fried,/static/img/restaurants/golden_gate_restaurant/fried_wontons.jpg
+2,Butterfly Shrimp,golden-gate-restaurant,495,chinese fried shrimp,/static/img/restaurants/golden_gate_restaurant/butterfly_shrimp.jpg
+3,Fried Spring Roll,golden-gate-restaurant,500,chinese fried rolls,/static/img/restaurants/golden_gate_restaurant/spring_roll.jpg
+4,Wonton Soup,golden-gate-restaurant,700,chinese soup wonton,/static/img/restaurants/golden_gate_restaurant/wonton_soup.jpg
+5,Egg Drop Soup,golden-gate-restaurant,650,chinese soup egg,/static/img/restaurants/golden_gate_restaurant/egg_drop_soup.jpg
+6,Chicken Chow Mein,golden-gate-restaurant,1400,chinese chicken noodles,/static/img/restaurants/golden_gate_restaurant/chicken-chow-mein.jpg

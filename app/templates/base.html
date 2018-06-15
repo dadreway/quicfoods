@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% block pageTitle %}QUICC FOODS{% endblock%}</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lib/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="/static/css/lib/fontawesome-all.min.css">
+
+    <link rel="stylesheet" href="/static/css/mainstyle.css"> 
+    {% block css %} {% endblock%}
+</head>
+
+<body class="">
+    <header>
+        {% include "header.html" %}
+    </header>
+
+    <main>
+        <div class="container">
+            {% include 'flash_messages.html' %} 
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-3 text-center pageTitle">{% block mainTitle %}QUICC FOODS{% endblock%}</h1>
+                </div>
+            {% block main %}                
+            {% endblock %}
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        {% include "footer.html" %}
+    </footer>
+
+
+
+    <script src="/static/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/lib/popper.min.js"></script>
+    <script src="/static/js/lib/bootstrap.min.js"></script> 
+    {% block js %}{% endblock%}
+</body>
+</html>
